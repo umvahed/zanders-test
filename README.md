@@ -21,3 +21,12 @@ Please wrap this in what you would consider a neat, production-ready FastAPI app
 - Pydantic API request and response schemas
 - SQLAlchemy declarative ORM for database interaction
 - Test cases (you can use the FastAPI test client and an in-memory sqlite database)
+
+## Approach 
+
+- Authentication: Simple username-password-based login.
+- Message Handling: Ability to post and retrieve messages.
+- Database: Use SQLAlchemy as the ORM for database interaction.
+- FastAPI: Set up routes and manage request/response handling.
+- Testing: Ensure the core functionalities work as expected.
+- Error Handling: Handle common error cases  (e.g., invalid login).
