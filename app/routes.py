@@ -1,4 +1,3 @@
-# routes.py
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from . import models, schemas, security
@@ -31,3 +30,4 @@ def create_message(
 def get_messages(user: schemas.UserLogin, db: Session = Depends(get_db)):
     authenticated_user = security.authenticate_user(db, user.username, user.password)
     messages = db.query
+    return messages

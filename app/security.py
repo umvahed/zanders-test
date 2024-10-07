@@ -1,4 +1,3 @@
-# security.py
 from fastapi import HTTPException, Depends
 from sqlalchemy.orm import Session
 from .models import User
